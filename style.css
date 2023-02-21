@@ -34,7 +34,7 @@
 }
 
 /*Modal Content*/
-.container-modal{
+.container-modal, .container-modal-calculator{
     position: fixed;
     top: 0;
     left: 0;
@@ -45,12 +45,17 @@
     place-items: center;
     z-index: -1;
     visibility: hidden;
+    overflow-y: scroll;
 }
 .open-modal{
     visibility: visible;
     z-index: 10;
 }
-.modal-content{
+.open-modal-calculator{
+    visibility: visible;
+    z-index: 15;
+}
+.modal-content, .modal-content-calculator{
     width: 100%;
     max-width: 450px;
     background-color: white;
@@ -58,20 +63,20 @@
     position: relative;
     margin: 0 5px;
 }
-.btn-close{
+.btn-close, .btn-close-calculator{
     position: absolute;
     font-size: 20px;
     right: 5px;
     top: 5px;
     cursor: pointer;
 }
-.modal-content-img{
+.modal-content-img, .modal-content-img-calculator{
     padding: 40px 10px 10px 10px;
 }
-.modal-content-img img{
+.modal-content-img img, .modal-content-img-calculator img{
     width: 100%;
 }
-.modal-body{
+.modal-body, .modal-body-calculator{
     min-height: 50px;
     text-align: center;
 }
